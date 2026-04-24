@@ -1,8 +1,8 @@
-[![MIT License](https://img.shields.io/badge/license-MIT-rgb%280%2C107%2C88%29)](https://github.com/opatry/tickit/blob/main/LICENSE)
-[![Build & Test](https://github.com/opatry/tickit/actions/workflows/build.yml/badge.svg)](https://github.com/opatry/tickit/actions/workflows/build.yml)
-[![📲 E2E Tests](https://github.com/opatry/tickit/actions/workflows/e2e-tests.yml/badge.svg)](https://github.com/opatry/tickit/actions/workflows/e2e-tests.yml)
+[![MIT License](https://img.shields.io/badge/license-MIT-rgb%280%2C107%2C88%29)](https://github.com/opatry/taskfolio/blob/main/LICENSE)
+[![Build & Test](https://github.com/opatry/taskfolio/actions/workflows/build.yml/badge.svg)](https://github.com/opatry/taskfolio/actions/workflows/build.yml)
+[![📲 E2E Tests](https://github.com/opatry/taskfolio/actions/workflows/e2e-tests.yml/badge.svg)](https://github.com/opatry/taskfolio/actions/workflows/e2e-tests.yml)
 ![Coverage 93%](https://img.shields.io/badge/Coverage-93%25-rgb%28154%2C205%2C50%29)
-[![Google Play Release](https://img.shields.io/github/v/release/opatry/tickit?sort=semver&style=flat&logo=googleplay&label=Release&color=rgb(191%2C238%2C222))](https://play.google.com/store/apps/details?id=net.opatry.tasks.app)
+[![Google Play Release](https://img.shields.io/github/v/release/opatry/taskfolio?sort=semver&style=flat&logo=googleplay&label=Release&color=rgb(191%2C238%2C222))](https://play.google.com/store/apps/details?id=net.opatry.tasks.app)
 
 <details>
 <summary>📊 Note about coverage…</summary>
@@ -32,16 +32,16 @@ Refer to the root project's [`build.gradle.kts`](build.gradle.kts#L55-L90) for d
 <img src="fastlane/metadata/store/en-US/images/featureGraphic.png" width="500">
 </div>
 
-# TickIt
+# Taskfolio
 
-[**TickIt**](https://opatry.github.io/tickit) is an Android task management app built using [Google Tasks API](https://developers.google.com/tasks/reference/rest). Developed to demonstrate my expertise in modern Android development, it highlights my skills in architecture, UI design with Jetpack Compose, OAuth authentication, and more—all packaged in a sleek, user-friendly interface.
+[**Taskfolio**](https://opatry.github.io/taskfolio) is an Android task management app built using [Google Tasks API](https://developers.google.com/tasks/reference/rest). Developed to demonstrate my expertise in modern Android development, it highlights my skills in architecture, UI design with Jetpack Compose, OAuth authentication, and more—all packaged in a sleek, user-friendly interface.
 
 > I set out to revisit the classical TODO app, ‘local-first’ syncing with Google Tasks—aiming for an <abbr title="Minimum Viable Experience">MVE</abbr> in 2 weeks, focusing on the 80/20 rule to nail the essentials.
 
-| ![](assets/screens/home_dark.png) | ![](assets/screens/task_lists_light.png) | ![](assets/screens/groceries_light.png) | ![](assets/screens/add_task_light.png) |
+| ![](assets/screens/task_lists_light.png) | ![](assets/screens/groceries_light.png) | ![](assets/screens/add_task_light.png) | ![](assets/screens/home_dark.png)  |
 | --------------------------------------- |--------------------------------------- | ---------------------------------- | ---------------------------------- |
 
-[![TickIt on Play Store](assets/GetItOnGooglePlay_Badge_Web_color_English.png)](https://play.google.com/store/apps/details?id=net.opatry.tasks.app)
+[![Taskfolio on Play Store](assets/GetItOnGooglePlay_Badge_Web_color_English.png)](https://play.google.com/store/apps/details?id=net.opatry.tasks.app)
 
 ## 🎯 Project intentions
 
@@ -66,18 +66,18 @@ I do not aim to implement advanced features beyond what is supported by the Goog
 
 ## 🚧 Known Limitations
 
-- Authentication flow isn't 100% reliable yet ([#34](https://github.com/opatry/tickit/issues/34)).
-- Local-first support with Google Tasks sync is limited, in particular sorting & conflict management is barely implemented ([#140](https://github.com/opatry/tickit/issues/140)).
-- Task completion state toggle doesn't honor indentation properly (ongoing) ([#175](https://github.com/opatry/tickit/issues/175))
-- No drag'n'drop to re-order tasks nor move them between lists ([#133](https://github.com/opatry/tickit/issues/133)).
-- Task deletion undo is not implemented ([#149](https://github.com/opatry/tickit/issues/149)).
-- Local action sync failure might not be synced again ([#150](https://github.com/opatry/tickit/issues/150)).
-- Setting due date is partially supported ([#155](https://github.com/opatry/tickit/issues/155)).
+- Authentication flow isn't 100% reliable yet ([#34](https://github.com/opatry/taskfolio/issues/34)).
+- Local-first support with Google Tasks sync is limited, in particular sorting & conflict management is barely implemented ([#140](https://github.com/opatry/taskfolio/issues/140)).
+- Task completion state toggle doesn't honor indentation properly (ongoing) ([#175](https://github.com/opatry/taskfolio/issues/175))
+- No drag'n'drop to re-order tasks nor move them between lists ([#133](https://github.com/opatry/taskfolio/issues/133)).
+- Task deletion undo is not implemented ([#149](https://github.com/opatry/taskfolio/issues/149)).
+- Local action sync failure might not be synced again ([#150](https://github.com/opatry/taskfolio/issues/150)).
+- Setting due date is partially supported ([#155](https://github.com/opatry/taskfolio/issues/155)).
 
 ## 🛠️ Tech stack
 
 - [Kotlin](https://kotlinlang.org/), [Multiplatform (aka KMP)](https://kotlinlang.org/docs/multiplatform.html) (currently Desktop & Android are supported)
-  - iOS wasn’t initially planned, but I bootstrapped a [PR to evaluate the feasibility of the iOS target]((https://github.com/opatry/tickit/pull/269)). It turned out to be quite achievable and just needs some polishing.
+  - iOS wasn’t initially planned, but I bootstrapped a [PR to evaluate the feasibility of the iOS target]((https://github.com/opatry/taskfolio/pull/269)). It turned out to be quite achievable and just needs some polishing.
   - Web is not planned any time soon (contribution are welcome 🤝)
 - [Kotlin coroutines](https://kotlinlang.org/docs/reference/coroutines/coroutines-guide.html)
 - [Ktor client](https://ktor.io/) (+ [Kotlinx serialization](https://kotlinlang.org/docs/serialization.html))
@@ -112,7 +112,7 @@ I do not aim to implement advanced features beyond what is supported by the Goog
   - Only integrates what seem relevant for the app needs
   - KMP
 - [`:tasks-core`](tasks-core) <span style="color: #66FF00;">■■■■■■■■</span>□□ 80%
-  - TickIt business logic
+  - Taskfolio business logic
   - Local first with Room database, sync with Google Tasks 
   - KMP
 - [`:tasks-app-shared`](tasks-app-shared) <span style="color: #66FF00;">■■■■■■■■</span>□□ 80%
@@ -124,7 +124,7 @@ I do not aim to implement advanced features beyond what is supported by the Goog
 - [`:tasks-app-android`](tasks-app-android) <span style="color: #66FF00;">■■■■■■■■</span>□□ 80%
   - The Android application (thin layer fully reusing `:tasks-app-shared`)
 - [`website/`](website) <span style="color: #00FF00;">■■■■■■■■■■</span> 100%
-  - The [static site](https://opatry.github.io/tickit/) presenting the project
+  - The [static site](https://opatry.github.io/taskfolio/) presenting the project
   - Made with [Jekyll](https://jekyllrb.com/) and served by [Github pages](https://pages.github.com/)
 
 ## 🧑‍💻 Local development
